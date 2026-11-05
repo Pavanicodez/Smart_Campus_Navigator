@@ -1,4 +1,4 @@
-const API_URL = "http://127.0.0.1:5000";
+const API_URL = "https://smart-campus-backend-39ao.onrender.com";
 
 const startSelect = document.getElementById("start");
 const destinationSelect = document.getElementById("destination");
