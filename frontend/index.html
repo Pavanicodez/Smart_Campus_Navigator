@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Smart Campus Navigator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Smart Campus Navigator</h1>
+        <p>Time-Aware Route Planning Using BFS, UCS and A*</p>
+    </header>
+
+    <main>
+
+        <section class="route-section">
+            <h2>Plan Your Route</h2>
+
+            <label for="start">Starting Location</label>
+            <select id="start">
+                <option value="">Select starting point</option>
+            </select>
+
+            <label for="destination">Destination</label>
+            <select id="destination">
+                <option value="">Select destination</option>
+            </select>
+
+            <label for="timeMode">Select Time Mode</label>
+            <select id="timeMode">
+                <option value="normal">Normal Time</option>
+                <option value="lunch">Lunch Time</option>
+            </select>
+
+            <button id="findRoute">Find Route</button>
+
+            <div id="result"></div>
+        </section>
+
+        <section class="graph-section">
+            <h2>Campus Graph Visualization</h2>
+
+            <p class="graph-description">
+                Visual representation of campus locations and their connections.
+            </p>
+
+            <div class="graph-controls">
+                <button id="normalGraph">Normal Graph</button>
+                <button id="lunchGraph">Lunch Time Graph</button>
+            </div>
+
+            <div class="graph-container">
+                <svg id="campusGraph"></svg>
+            </div>
+
+            <div class="graph-legend">
+                <span>● Campus Location</span>
+                <span>— Connection</span>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Smart Campus Navigator | AI Mini Project</p>
+    </footer>
+    
+    <script src="graph.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
