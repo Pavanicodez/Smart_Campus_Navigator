@@ -1,4 +1,4 @@
-const GRAPH_API = "http://127.0.0.1:5000/api/graph";
+const GRAPH_API = "https://smart-campus-backend-39ao.onrender.com";
 
 const svg = document.getElementById("campusGraph");
 
