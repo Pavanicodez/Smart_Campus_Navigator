@@ -15,9 +15,9 @@ async function loadCampusGraph(isLunchTime = false, selectedPath = null) {
 
     try {
         const response = await fetch(
-            `${GRAPH_API}?lunch=${isLunchTime}`
+            `${GRAPH_API}/api/graph?lunch=${isLunchTime}`
         );
-
+        
         if (!response.ok) {
             throw new Error("Unable to load campus graph");
         }
